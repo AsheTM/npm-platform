@@ -1,0 +1,62 @@
+{
+  "name": "@ashetm/platform",
+  "version": "1.0.0",
+  "description": "Small, dependency-free environment checks (browser, server, web worker, browser abilities) that are safe to call on the server.",
+  "contributors": [
+    {
+      "email": "contact@ashetm.com",
+      "name": "DAWOUD Haitham",
+      "url": "http://ashetm.com"
+    }
+  ],
+  "author": {
+    "email": "contact@ashetm.com",
+    "name": "DAWOUD Haitham",
+    "url": "http://ashetm.com"
+  },
+  "keywords": [
+    "browser",
+    "environment",
+    "isomorphic",
+    "js",
+    "media-devices",
+    "platform",
+    "secure-context",
+    "server",
+    "ssr",
+    "ts",
+    "web-worker"
+  ],
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsheTM/npm-platform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AsheTM/npm-platform/issues"
+  },
+  "homepage": "https://github.com/AsheTM/npm-platform#readme",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "test": "node --test \"src/**/*.spec.ts\"",
+    "typecheck": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "~5.9.3"
+  }
+}
