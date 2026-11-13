@@ -27,6 +27,7 @@
     "ts",
     "web-worker"
   ],
+  "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
