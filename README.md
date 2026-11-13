@@ -61,3 +61,7 @@ npm run build
 ```
 
 Tests use the Node test runner (`node --test`) and run the TypeScript sources directly.
+
+## License
+
+[MIT](LICENSE)
