@@ -1,6 +1,6 @@
 {
   "name": "@ashetm/platform",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small, dependency-free environment checks (browser, server, web worker, browser abilities) that are safe to call on the server.",
   "contributors": [
     {
@@ -27,6 +27,7 @@
     "ts",
     "web-worker"
   ],
+  "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
